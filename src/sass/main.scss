@@ -1,0 +1,125 @@
+@use 'colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 1.2em;
+	width: 100%;
+	max-width: 1200px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 1rem;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 500;
+	background-color: $bg-color;
+}
+.card {
+	height: 400px;
+	width: 280px;
+	border: 1px solid $title-color;
+	border-radius: 15px;
+	background-color: $card-color;
+	box-shadow: 4px 4px $title-color;
+
+	&__img {
+		width: 100%;
+		border-radius: 10px;
+	}
+	&__text {
+		&-learning {
+			display: inline-block;
+			margin: 1em 0;
+			padding: 0.5em 0.9em;
+			font-size: 0.7rem;
+			font-weight: 800;
+			border-radius: 5px;
+			background-color: $bg-color;
+		}
+		&-published {
+			font-size: 0.7rem;
+		}
+		&-title {
+			margin: 0.8em 0;
+			font-size: 1.2rem;
+			font-weight: 800;
+		}
+		&-description {
+			font-size: 0.7rem;
+			font-weight: 500;
+			color: $description-color;
+			line-height: 1.5em;
+		}
+	}
+	&__author {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding: 1em 0;
+		&-img {
+			width: 15%;
+			padding: 0 0.5em 0 0;
+		}
+		&-name {
+			font-size: 0.7rem;
+			font-weight: 800;
+		}
+	}
+}
+.attribution {
+	position: absolute;
+	bottom: 0;
+	font-size: 0.7rem;
+	padding: 1em;
+	&__link {
+		font-size: 0.688rem;
+		color: $link-color;
+		text-decoration: none;
+	}
+}
+
+//////////////////////////////////////MEDIA////////////////////////
+@media (min-width: 768px) {
+	.wrapper {
+		padding: 1.5em;
+	}
+	.card {
+		height: 500px;
+		width: 350px;
+		&__text {
+			&-learning {
+				font-size: 0.9rem;
+			}
+			&-published {
+				font-size: 0.9rem;
+			}
+			&-title {
+				font-size: 1.5rem;
+			}
+			&-description {
+				font-size: 0.9rem;
+			}
+		}
+		&__author {
+			&-name {
+				font-size: 0.9rem;
+			}
+		}
+	}
+	.attribution {
+		font-size: 0.9rem;
+		&__link {
+			font-size: 0.9rem;
+		}
+	}
+}
