@@ -28,8 +28,8 @@ Mobile
 ### Links
 
 - Repository URL:[GitHub](https://github.com/LesSyl/Blog-preview-card)
-- Solution URL: [Frontendmentor]()
-- Live Site URL: [Live]( https://lessyl.github.io/Blog-preview-card/)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/blog-preview-card-solution-d3dQIDpry2)
+- Live Site URL: [Live](https://lessyl.github.io/Frontend-Mentor---Blog-preview-card/)
 
 ## My process
 
